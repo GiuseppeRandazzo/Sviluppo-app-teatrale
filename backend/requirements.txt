@@ -1,0 +1,34 @@
+# Framework API
+fastapi==0.104.0
+uvicorn==0.23.2
+python-multipart==0.0.6
+pydantic==2.4.2
+
+# Gestione CORS
+fastapi-cors==0.0.6
+
+# Parsing documenti
+python-docx==1.0.1
+pypdf2==3.0.1
+
+# Text-to-Speech
+elevenlabs==0.2.26
+azure-cognitiveservices-speech==1.31.0
+google-cloud-texttospeech==2.14.1
+
+# Generazione video e immagini
+python-ffmpeg==2.0.2
+pillow==10.0.1
+requests==2.31.0
+
+# Gestione file e ambiente
+python-dotenv==1.0.0
+aiofiles==23.2.1
+
+# Database
+sqlalchemy==2.0.22
+
+# Utility
+numpy==1.26.0
+pandas==2.1.1
+tqdm==4.66.1

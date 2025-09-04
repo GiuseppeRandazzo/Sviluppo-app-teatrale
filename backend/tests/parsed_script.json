@@ -1,0 +1,509 @@
+{
+  "id": "4380d4d2-7f52-42b9-90bc-e61880dabe5c",
+  "metadata": {
+    "title": "LA VISITA INASPETTATA",
+    "author": null,
+    "created_at": "2025-09-04T11:43:46.273673",
+    "updated_at": "2025-09-04T11:43:46.273691",
+    "notes": null
+  },
+  "characters": [
+    {
+      "id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+      "name": "ANTONIO",
+      "description": "",
+      "voice_settings": {
+        "gender": "male",
+        "age": "adult",
+        "accent": "neutral"
+      },
+      "avatar_settings": {
+        "style": "realistic"
+      },
+      "dialogues_count": 5
+    },
+    {
+      "id": "58f67984-8940-4e65-8069-19dc513f5042",
+      "name": "MARIA",
+      "description": "",
+      "voice_settings": {
+        "gender": "female",
+        "age": "adult",
+        "accent": "neutral"
+      },
+      "avatar_settings": {
+        "style": "realistic"
+      },
+      "dialogues_count": 18
+    },
+    {
+      "id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+      "name": "GIOVANNI",
+      "description": "",
+      "voice_settings": {
+        "gender": "unknown",
+        "age": "adult",
+        "accent": "neutral"
+      },
+      "avatar_settings": {
+        "style": "realistic"
+      },
+      "dialogues_count": 11
+    },
+    {
+      "id": "fec24b60-5621-4074-9a78-512290fe36f0",
+      "name": "LUCIA",
+      "description": "",
+      "voice_settings": {
+        "gender": "female",
+        "age": "adult",
+        "accent": "neutral"
+      },
+      "avatar_settings": {
+        "style": "realistic"
+      },
+      "dialogues_count": 5
+    }
+  ],
+  "acts": [
+    {
+      "id": "9e9d69a6-4964-421b-924c-569392616261",
+      "title": "Atto I",
+      "description": null,
+      "scenes": [
+        {
+          "id": "b2d68da3-6d4d-46de-b5fa-6dd1f6350155",
+          "title": "Scena I",
+          "description": null,
+          "dialogues": [
+            {
+              "character_id": null,
+              "text": "di Mario Rossi",
+              "type": "scene_description",
+              "audio_file": null
+            }
+          ],
+          "setting": null,
+          "background_music": null,
+          "video_file": null
+        }
+      ]
+    },
+    {
+      "id": "5d4c5000-d736-4305-b87a-cecd5af4bb53",
+      "title": "ATTO I",
+      "description": null,
+      "scenes": [
+        {
+          "id": "1d5a8ff4-3c10-497a-95f1-3a8653c9e155",
+          "title": "SCENA 1",
+          "description": null,
+          "dialogues": [
+            {
+              "character_id": null,
+              "text": "Il salotto è illuminato dalla luce del pomeriggio. MARIA è seduta sul divano e legge un libro.",
+              "type": "scene_description",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Che strana sensazione ho oggi. Come se dovesse succedere qualcosa.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "(alzando lo sguardo)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": null,
+              "text": "(Suona il campanello)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Chi sarà a quest'ora?",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": null,
+              "text": "(Maria si alza e va ad aprire la porta. Entra GIOVANNI con un mazzo di fiori)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "Sorpresa! Sono tornato prima dal viaggio.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Giovanni! Non ti aspettavo fino alla prossima settimana!",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "Ho concluso gli affari in anticipo e non vedevo l'ora di tornare da te.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Sono così felice di vederti.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "(abbracciandolo)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "Questi sono per te. Li ho presi al mercato dei fiori.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "(porgendole i fiori)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Sono bellissimi, grazie!",
+              "type": "speech",
+              "audio_file": null
+            }
+          ],
+          "setting": "Un salotto elegante con divani e un grande finestrone che dà sul giardino.",
+          "background_music": null,
+          "video_file": null
+        },
+        {
+          "id": "b3295251-2a32-414c-9234-51f3be2f6461",
+          "title": "SCENA 2",
+          "description": null,
+          "dialogues": [
+            {
+              "character_id": null,
+              "text": "La stessa ambientazione, qualche ora dopo. MARIA e GIOVANNI sono seduti sul divano.",
+              "type": "scene_description",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "C'è qualcosa che devo dirti.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Cosa succede? Hai uno sguardo strano.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "(preoccupata)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "Durante il viaggio ho incontrato una persona che conosciamo bene.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Chi?",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "Tuo fratello Antonio.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Antonio? Ma è impossibile! Mio fratello è in Australia da anni!",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "(sorpresa)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "È tornato in Italia. E sta venendo qui.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": null,
+              "text": "(Suona il campanello)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Non può essere lui!",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "(alzandosi di scatto)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "Apri la porta, Maria.",
+              "type": "speech",
+              "audio_file": null
+            }
+          ],
+          "setting": null,
+          "background_music": null,
+          "video_file": null
+        }
+      ]
+    },
+    {
+      "id": "577df8b8-2ea8-4f0e-b436-79a5728f3251",
+      "title": "ATTO II",
+      "description": null,
+      "scenes": [
+        {
+          "id": "c4ab51c4-f6f4-4e5a-b2ca-b3916ba8ed82",
+          "title": "SCENA 1",
+          "description": null,
+          "dialogues": [
+            {
+              "character_id": null,
+              "text": "Lo stesso salotto, la mattina seguente. ANTONIO è seduto sulla poltrona mentre MARIA prepara il caffè.",
+              "type": "scene_description",
+              "audio_file": null
+            },
+            {
+              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "text": "Non pensavo che mi avresti accolto così bene dopo tutto questo tempo.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Sei pur sempre mio fratello. Anche se sono ancora arrabbiata per come sei sparito.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "text": "Avevo bisogno di trovare la mia strada. E ora l'ho trovata.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "E quale sarebbe questa strada?",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "text": "Ho fatto fortuna con una miniera d'oro. Sono tornato per condividere la mia ricchezza con la famiglia.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Davvero? E perché dovrei crederti?",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "(scettica)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": null,
+              "text": "(Entra GIOVANNI)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "Buongiorno a tutti.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "text": "Giovanni, stavo giusto raccontando a Maria del mio successo in Australia.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "E lei ci crede?",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "(guardando Maria)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "text": "Ecco le prove. I documenti della miniera e un assegno per voi.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "text": "(estraendo una busta dalla tasca)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Sembra tutto vero...",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "(esaminando i documenti)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "Troppo bello per essere vero.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "text": "(sospettoso)",
+              "type": "direction",
+              "audio_file": null
+            }
+          ],
+          "setting": null,
+          "background_music": null,
+          "video_file": null
+        },
+        {
+          "id": "72389f8a-c15f-4af2-8f83-98b2c5eba980",
+          "title": "SCENA 2",
+          "description": null,
+          "dialogues": [
+            {
+              "character_id": null,
+              "text": "Lo stesso giorno, nel tardo pomeriggio. MARIA è sola nel salotto quando entra LUCIA, la sua migliore amica.",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "text": "Allora è vero! Tuo fratello è tornato!",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Come lo sai?",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "text": "Tutta la città ne parla. Il ritorno del figlio prodigo con una fortuna dall'Australia!",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Non so cosa pensare, Lucia. È tutto così improvviso.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "text": "Fidati del tuo istinto. Cosa ti dice?",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Che c'è qualcosa che non quadra. Antonio è sempre stato un bugiardo.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "text": "Allora tieni gli occhi aperti.",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": null,
+              "text": "(Si sente un rumore dalla stanza accanto)",
+              "type": "direction",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Hai sentito?",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "text": "Sì. C'è qualcuno in casa?",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "text": "Dovrebbero essere tutti fuori...",
+              "type": "speech",
+              "audio_file": null
+            },
+            {
+              "character_id": null,
+              "text": "(Le due donne si guardano preoccupate)",
+              "type": "direction",
+              "audio_file": null
+            }
+          ],
+          "setting": null,
+          "background_music": null,
+          "video_file": null
+        }
+      ]
+    }
+  ],
+  "status": "parsed",
+  "progress": 20
+}

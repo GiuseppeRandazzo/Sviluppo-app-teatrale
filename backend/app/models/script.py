@@ -20,6 +20,7 @@ class Character(BaseModel):
     description: Optional[str] = None
     voice_settings: Optional[Dict] = None  # Impostazioni voce (tono, età, accento)
     avatar_settings: Optional[Dict] = None  # Impostazioni avatar
+    dialogues_count: int = 0  # Numero di battute nel copione
 
 class Scene(BaseModel):
     id: str

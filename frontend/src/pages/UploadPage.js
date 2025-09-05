@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
 
 const UploadPage = () => {
   const [file, setFile] = useState(null);
+  const [filePreview, setFilePreview] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [uploadProgress, setUploadProgress] = useState(0);
   const navigate = useNavigate();
 
-  const onDrop = (acceptedFiles) => {
+  const onDrop = useCallback((acceptedFiles) => {
     setError('');
+    setFilePreview('');
     const selectedFile = acceptedFiles[0];
+    
+    if (!selectedFile) return;
     
     // Verifica estensione file
     const validExtensions = ['.txt', '.docx', '.pdf'];
@@ -29,7 +34,21 @@ const UploadPage = () => {
     }
     
     setFile(selectedFile);
-  };
+    
+    // Genera anteprima per file di testo
+    if (fileExt === '.txt') {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const text = reader.result;
+        // Mostra solo le prime 500 caratteri
+        setFilePreview(text.substring(0, 500) + (text.length > 500 ? '...' : ''));
+      };
+      reader.readAsText(selectedFile);
+    } else {
+      // Per altri tipi di file, mostra solo info sul file
+      setFilePreview(`Tipo file: ${fileExt.substring(1).toUpperCase()}`);
+    }
+  }, []);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ 
     onDrop,
@@ -49,6 +68,7 @@ const UploadPage = () => {
 
     setLoading(true);
     setError('');
+    setUploadProgress(0);
 
     const formData = new FormData();
     formData.append('file', file);
@@ -57,6 +77,10 @@ const UploadPage = () => {
       const response = await axios.post('http://localhost:8000/api/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
+        },
+        onUploadProgress: (progressEvent) => {
+          const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
+          setUploadProgress(percentCompleted);
         }
       });
 
@@ -64,7 +88,7 @@ const UploadPage = () => {
       navigate(`/editor/${response.data.project_id}`);
     } catch (err) {
       console.error('Errore durante il caricamento:', err);
-      setError(err.response?.data?.detail || 'Errore durante il caricamento del file');
+      setError(err.response?.data?.detail || 'Errore durante il caricamento del file. Verifica la connessione al server.');
     } finally {
       setLoading(false);
     }
@@ -100,22 +124,47 @@ const UploadPage = () => {
       {file && (
         <div className="mb-6 p-4 bg-gray-50 rounded-lg">
           <h3 className="font-medium mb-2">File selezionato:</h3>
-          <div className="flex items-center">
+          <div className="flex items-center mb-3">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
-            <span>{file.name}</span>
+            <span className="font-medium">{file.name}</span>
             <span className="ml-2 text-sm text-gray-500">({(file.size / 1024).toFixed(2)} KB)</span>
             <button 
-              onClick={() => setFile(null)} 
+              onClick={() => {
+                setFile(null);
+                setFilePreview('');
+              }} 
               className="ml-auto text-red-500 hover:text-red-700"
               type="button"
+              aria-label="Rimuovi file"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
+          
+          {filePreview && (
+            <div className="mt-3 p-3 bg-white rounded border border-gray-200 max-h-40 overflow-y-auto">
+              <h4 className="text-sm font-medium mb-2 text-gray-700">Anteprima:</h4>
+              <p className="text-sm whitespace-pre-wrap">{filePreview}</p>
+            </div>
+          )}
+        </div>
+      )}
+      
+      {loading && (
+        <div className="mb-6">
+          <div className="w-full bg-gray-200 rounded-full h-2.5">
+            <div 
+              className="bg-primary-600 h-2.5 rounded-full transition-all duration-300" 
+              style={{ width: `${uploadProgress}%` }}
+            ></div>
+          </div>
+          <p className="text-sm text-gray-600 mt-2 text-center">
+            Caricamento in corso... {uploadProgress}%
+          </p>
         </div>
       )}
 
@@ -143,28 +192,44 @@ const UploadPage = () => {
         </button>
       </div>
 
-      <div className="mt-12 text-center text-gray-600">
-        <h3 className="font-medium mb-4">Suggerimenti per un'analisi ottimale:</h3>
-        <ul className="text-left max-w-md mx-auto space-y-2">
-          <li className="flex items-start">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-            Assicurati che i nomi dei personaggi siano chiaramente identificabili
-          </li>
-          <li className="flex items-start">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-            Separa le battute e le didascalie in modo chiaro
-          </li>
-          <li className="flex items-start">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-            Indica chiaramente l'inizio e la fine delle scene
-          </li>
-        </ul>
+      <div className="mt-12 bg-blue-50 rounded-lg p-6 border border-blue-100">
+        <h3 className="font-medium mb-4 text-center text-blue-800">Suggerimenti per un'analisi ottimale</h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="space-y-4">
+            <h4 className="font-medium text-blue-700">Formato del copione</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Assicurati che i <strong>nomi dei personaggi</strong> siano chiaramente identificabili (es. in maiuscolo o seguiti da due punti)</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Separa le <strong>battute</strong> e le <strong>didascalie</strong> in modo chiaro (didascalie tra parentesi)</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Indica chiaramente l'<strong>inizio e la fine delle scene</strong> (es. "ATTO I", "SCENA 1")</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="space-y-4">
+            <h4 className="font-medium text-blue-700">Esempi di formattazione</h4>
+            <div className="bg-white p-3 rounded border border-gray-200 text-sm">
+              <p className="font-bold mb-2">ATTO I - SCENA 1</p>
+              <p className="italic mb-2">(Un salotto. Luci soffuse. MARIA entra dalla porta principale.)</p>
+              <p><strong>MARIA:</strong> Non pensavo di trovarti qui. (sorpresa)</p>
+              <p><strong>GIOVANNI:</strong> Ti stavo aspettando.</p>
+            </div>
+            <p className="text-xs text-gray-600">Il nostro parser è in grado di riconoscere automaticamente personaggi, battute, didascalie e struttura del copione.</p>
+          </div>
+        </div>
       </div>
     </div>
   );

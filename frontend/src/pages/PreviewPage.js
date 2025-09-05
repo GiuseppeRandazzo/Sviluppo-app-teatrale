@@ -113,15 +113,27 @@ const PreviewPage = () => {
             </div>
             
             <p className="text-sm text-gray-500">{project.progress || 0}% completato</p>
+            <p className="text-sm text-gray-500 mt-4">Puoi chiudere questa pagina e tornare più tardi. Ti invieremo una notifica quando il video sarà pronto.</p>
           </div>
         </div>
         
-        <button 
-          onClick={handleEdit} 
-          className="btn-secondary py-2 px-6"
-        >
-          Torna all'editor
-        </button>
+        <div className="flex justify-center space-x-4">
+          <button 
+            onClick={handleEdit} 
+            className="btn-secondary py-2 px-6 flex items-center"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            Torna all'editor
+          </button>
+          <button 
+            onClick={() => navigate('/dashboard')} 
+            className="btn-outline py-2 px-6"
+          >
+            Vai alla dashboard
+          </button>
+        </div>
       </div>
     );
   }

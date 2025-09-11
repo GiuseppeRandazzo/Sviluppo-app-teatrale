@@ -1,15 +1,15 @@
 {
-  "id": "4380d4d2-7f52-42b9-90bc-e61880dabe5c",
+  "id": "9e9fc8a1-baa3-4802-815f-508a74fa2a8e",
   "metadata": {
     "title": "LA VISITA INASPETTATA",
     "author": null,
-    "created_at": "2025-09-04T11:43:46.273673",
-    "updated_at": "2025-09-04T11:43:46.273691",
+    "created_at": "2025-09-11T12:16:06.538747",
+    "updated_at": "2025-09-11T12:16:06.538785",
     "notes": null
   },
   "characters": [
     {
-      "id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+      "id": "5d2a503a-f2fb-466b-a21d-f27afaa0252d",
       "name": "ANTONIO",
       "description": "",
       "voice_settings": {
@@ -23,7 +23,7 @@
       "dialogues_count": 5
     },
     {
-      "id": "58f67984-8940-4e65-8069-19dc513f5042",
+      "id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
       "name": "MARIA",
       "description": "",
       "voice_settings": {
@@ -37,21 +37,7 @@
       "dialogues_count": 18
     },
     {
-      "id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
-      "name": "GIOVANNI",
-      "description": "",
-      "voice_settings": {
-        "gender": "unknown",
-        "age": "adult",
-        "accent": "neutral"
-      },
-      "avatar_settings": {
-        "style": "realistic"
-      },
-      "dialogues_count": 11
-    },
-    {
-      "id": "fec24b60-5621-4074-9a78-512290fe36f0",
+      "id": "790a8947-61a8-468d-8113-02682441fe83",
       "name": "LUCIA",
       "description": "",
       "voice_settings": {
@@ -63,16 +49,30 @@
         "style": "realistic"
       },
       "dialogues_count": 5
+    },
+    {
+      "id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
+      "name": "GIOVANNI",
+      "description": "",
+      "voice_settings": {
+        "gender": "unknown",
+        "age": "adult",
+        "accent": "neutral"
+      },
+      "avatar_settings": {
+        "style": "realistic"
+      },
+      "dialogues_count": 11
     }
   ],
   "acts": [
     {
-      "id": "9e9d69a6-4964-421b-924c-569392616261",
+      "id": "0fd21a0c-ae0e-46e4-a082-fb97707486b3",
       "title": "Atto I",
       "description": null,
       "scenes": [
         {
-          "id": "b2d68da3-6d4d-46de-b5fa-6dd1f6350155",
+          "id": "11e0217e-306f-48fc-aa1e-480d5978f372",
           "title": "Scena I",
           "description": null,
           "dialogues": [
@@ -90,12 +90,12 @@
       ]
     },
     {
-      "id": "5d4c5000-d736-4305-b87a-cecd5af4bb53",
+      "id": "69ec5cb0-7548-44ee-a349-5c9d8f263679",
       "title": "ATTO I",
       "description": null,
       "scenes": [
         {
-          "id": "1d5a8ff4-3c10-497a-95f1-3a8653c9e155",
+          "id": "30f9d9ba-42d3-42ab-badc-b7a9062a3e0e",
           "title": "SCENA 1",
           "description": null,
           "dialogues": [
@@ -106,13 +106,13 @@
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Che strana sensazione ho oggi. Come se dovesse succedere qualcosa.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "(alzando lo sguardo)",
               "type": "direction",
               "audio_file": null
@@ -124,7 +124,7 @@
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Chi sarà a quest'ora?",
               "type": "speech",
               "audio_file": null
@@ -136,49 +136,49 @@
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "Sorpresa! Sono tornato prima dal viaggio.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Giovanni! Non ti aspettavo fino alla prossima settimana!",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "Ho concluso gli affari in anticipo e non vedevo l'ora di tornare da te.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Sono così felice di vederti.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "(abbracciandolo)",
               "type": "direction",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "Questi sono per te. Li ho presi al mercato dei fiori.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "(porgendole i fiori)",
               "type": "direction",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Sono bellissimi, grazie!",
               "type": "speech",
               "audio_file": null
@@ -189,7 +189,7 @@
           "video_file": null
         },
         {
-          "id": "b3295251-2a32-414c-9234-51f3be2f6461",
+          "id": "276b8ea3-2a92-45cf-867a-d1ebbf203eb9",
           "title": "SCENA 2",
           "description": null,
           "dialogues": [
@@ -200,55 +200,55 @@
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "C'è qualcosa che devo dirti.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Cosa succede? Hai uno sguardo strano.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "(preoccupata)",
               "type": "direction",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "Durante il viaggio ho incontrato una persona che conosciamo bene.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Chi?",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "Tuo fratello Antonio.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Antonio? Ma è impossibile! Mio fratello è in Australia da anni!",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "(sorpresa)",
               "type": "direction",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "È tornato in Italia. E sta venendo qui.",
               "type": "speech",
               "audio_file": null
@@ -260,19 +260,19 @@
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Non può essere lui!",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "(alzandosi di scatto)",
               "type": "direction",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "Apri la porta, Maria.",
               "type": "speech",
               "audio_file": null
@@ -285,12 +285,12 @@
       ]
     },
     {
-      "id": "577df8b8-2ea8-4f0e-b436-79a5728f3251",
+      "id": "cdd81000-80f2-4e5f-9dc4-aef748634bc0",
       "title": "ATTO II",
       "description": null,
       "scenes": [
         {
-          "id": "c4ab51c4-f6f4-4e5a-b2ca-b3916ba8ed82",
+          "id": "a9ef83f8-4494-4495-9efa-a39422be4793",
           "title": "SCENA 1",
           "description": null,
           "dialogues": [
@@ -301,43 +301,43 @@
               "audio_file": null
             },
             {
-              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "character_id": "5d2a503a-f2fb-466b-a21d-f27afaa0252d",
               "text": "Non pensavo che mi avresti accolto così bene dopo tutto questo tempo.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Sei pur sempre mio fratello. Anche se sono ancora arrabbiata per come sei sparito.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "character_id": "5d2a503a-f2fb-466b-a21d-f27afaa0252d",
               "text": "Avevo bisogno di trovare la mia strada. E ora l'ho trovata.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "E quale sarebbe questa strada?",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "character_id": "5d2a503a-f2fb-466b-a21d-f27afaa0252d",
               "text": "Ho fatto fortuna con una miniera d'oro. Sono tornato per condividere la mia ricchezza con la famiglia.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Davvero? E perché dovrei crederti?",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "(scettica)",
               "type": "direction",
               "audio_file": null
@@ -349,61 +349,61 @@
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "Buongiorno a tutti.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "character_id": "5d2a503a-f2fb-466b-a21d-f27afaa0252d",
               "text": "Giovanni, stavo giusto raccontando a Maria del mio successo in Australia.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "E lei ci crede?",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "(guardando Maria)",
               "type": "direction",
               "audio_file": null
             },
             {
-              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "character_id": "5d2a503a-f2fb-466b-a21d-f27afaa0252d",
               "text": "Ecco le prove. I documenti della miniera e un assegno per voi.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "cc2e3edf-ae8c-43ff-b9c5-7c2dfc274864",
+              "character_id": "5d2a503a-f2fb-466b-a21d-f27afaa0252d",
               "text": "(estraendo una busta dalla tasca)",
               "type": "direction",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Sembra tutto vero...",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "(esaminando i documenti)",
               "type": "direction",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "Troppo bello per essere vero.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "db3e9d56-461a-41c1-bcd6-2cced2d74bd5",
+              "character_id": "7ffdbb74-d080-4937-b9cd-4a605dc8b5a7",
               "text": "(sospettoso)",
               "type": "direction",
               "audio_file": null
@@ -414,7 +414,7 @@
           "video_file": null
         },
         {
-          "id": "72389f8a-c15f-4af2-8f83-98b2c5eba980",
+          "id": "0138dd5b-d534-4b03-ab96-401000f927c4",
           "title": "SCENA 2",
           "description": null,
           "dialogues": [
@@ -425,43 +425,43 @@
               "audio_file": null
             },
             {
-              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "character_id": "790a8947-61a8-468d-8113-02682441fe83",
               "text": "Allora è vero! Tuo fratello è tornato!",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Come lo sai?",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "character_id": "790a8947-61a8-468d-8113-02682441fe83",
               "text": "Tutta la città ne parla. Il ritorno del figlio prodigo con una fortuna dall'Australia!",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Non so cosa pensare, Lucia. È tutto così improvviso.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "character_id": "790a8947-61a8-468d-8113-02682441fe83",
               "text": "Fidati del tuo istinto. Cosa ti dice?",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Che c'è qualcosa che non quadra. Antonio è sempre stato un bugiardo.",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "character_id": "790a8947-61a8-468d-8113-02682441fe83",
               "text": "Allora tieni gli occhi aperti.",
               "type": "speech",
               "audio_file": null
@@ -473,19 +473,19 @@
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Hai sentito?",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "fec24b60-5621-4074-9a78-512290fe36f0",
+              "character_id": "790a8947-61a8-468d-8113-02682441fe83",
               "text": "Sì. C'è qualcuno in casa?",
               "type": "speech",
               "audio_file": null
             },
             {
-              "character_id": "58f67984-8940-4e65-8069-19dc513f5042",
+              "character_id": "e98797a2-c7aa-49a7-9abd-05cafec63348",
               "text": "Dovrebbero essere tutti fuori...",
               "type": "speech",
               "audio_file": null

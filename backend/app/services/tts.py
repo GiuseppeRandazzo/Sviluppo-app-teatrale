@@ -132,12 +132,92 @@ class TextToSpeechService:
     
     async def _generate_with_azure(self, text: str, output_path: str, voice_settings: Dict) -> bool:
         """Genera audio utilizzando Azure Cognitive Services"""
-        # Implementazione per Azure Speech Services
-        # ...
-        return True  # Placeholder
+        try:
+            import azure.cognitiveservices.speech as speechsdk
+            
+            # Configurazione del servizio
+            speech_config = speechsdk.SpeechConfig(subscription=self.api_key, region=self.region)
+            
+            # Impostazione della voce in base alle preferenze
+            voice_name = voice_settings.get("voice_name", "it-IT-ElsaNeural")  # Default voce italiana
+            speech_config.speech_synthesis_voice_name = voice_name
+            
+            # Configurazione dell'output audio
+            audio_config = speechsdk.audio.AudioOutputConfig(filename=output_path)
+            
+            # Creazione del sintetizzatore
+            speech_synthesizer = speechsdk.SpeechSynthesizer(
+                speech_config=speech_config, 
+                audio_config=audio_config
+            )
+            
+            # Generazione SSML per controllo avanzato
+            ssml = f"""
+            <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="it-IT">
+                <voice name="{voice_name}">
+                    <prosody rate="{voice_settings.get('rate', '0%')}" 
+                             pitch="{voice_settings.get('pitch', '0%')}" 
+                             volume="{voice_settings.get('volume', '+0%')}">
+                        {text}
+                    </prosody>
+                </voice>
+            </speak>
+            """
+            
+            # Sintesi vocale
+            result = speech_synthesizer.speak_ssml_async(ssml).get()
+            
+            # Verifica del risultato
+            if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
+                return True
+            else:
+                print(f"Errore nella sintesi: {result.reason}")
+                return False
+                
+        except Exception as e:
+            print(f"Errore nella generazione con Azure: {str(e)}")
+            return False
     
     async def _generate_with_google(self, text: str, output_path: str, voice_settings: Dict) -> bool:
         """Genera audio utilizzando Google Cloud Text-to-Speech"""
-        # Implementazione per Google Cloud TTS
-        # ...
-        return True  # Placeholder
+        try:
+            from google.cloud import texttospeech
+            
+            # Inizializzazione del client
+            client = texttospeech.TextToSpeechClient()
+            
+            # Configurazione dell'input
+            synthesis_input = texttospeech.SynthesisInput(text=text)
+            
+            # Configurazione della voce
+            voice_name = voice_settings.get("voice_name", "it-IT-Wavenet-A")
+            language_code = voice_name.split("-")[0] + "-" + voice_name.split("-")[1]
+            
+            voice = texttospeech.VoiceSelectionParams(
+                language_code=language_code,
+                name=voice_name,
+                ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
+            )
+            
+            # Configurazione dell'audio
+            audio_config = texttospeech.AudioConfig(
+                audio_encoding=texttospeech.AudioEncoding.MP3,
+                speaking_rate=voice_settings.get("speaking_rate", 1.0),
+                pitch=voice_settings.get("pitch", 0.0),
+                volume_gain_db=voice_settings.get("volume_gain_db", 0.0)
+            )
+            
+            # Richiesta di sintesi
+            response = client.synthesize_speech(
+                input=synthesis_input, voice=voice, audio_config=audio_config
+            )
+            
+            # Salvataggio del file audio
+            with open(output_path, "wb") as out:
+                out.write(response.audio_content)
+                
+            return True
+            
+        except Exception as e:
+            print(f"Errore nella generazione con Google: {str(e)}")
+            return False

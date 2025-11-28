@@ -55,7 +55,7 @@ Teatro AI è un'applicazione web che permette di caricare copioni teatrali e tra
 
 ## Installazione e Avvio
 
-### Frontend
+### Frontend (Modalità Standalone)
 
 ```bash
 cd frontend
@@ -63,13 +63,9 @@ npm install
 npm start
 ```
 
-### Backend
+L'applicazione si avvierà su `http://localhost:3000`
 
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
+**Nota:** Attualmente l'app funziona in modalità standalone senza backend. Tutte le funzionalità utilizzano dati mock salvati in localStorage.
 
 ## Tecnologie Utilizzate
 
